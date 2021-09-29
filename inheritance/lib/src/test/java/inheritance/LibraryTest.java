@@ -11,4 +11,23 @@ class LibraryTest {
         Library classUnderTest = new Library();
         assertTrue(classUnderTest.someLibraryMethod(), "someLibraryMethod should return 'true'");
     }
+    @Test void buildRestaurant()
+    {
+        Restaurant hopJacks = new Restaurant("Hop Jacks", 4);
+    }
+    @Test void buildShop()
+    {
+        Shop homeDepot = new Shop("Home Depot", 3);
+    }
+    @Test void buildTheatre()
+    {
+        Theatre regalCinema = new Theatre("Regal Cinema", 5);
+    }
+    @Test void writeReview()
+    {
+        Review hopJacksReview = new Review("Patrick", "Hop Jacks", "Poor service", 1);
+        Review homeDepotReview = new Review("Patrick", "Home Depot", "Has Lumber", 3);
+        Review regalCinemaReview = new Review("Patrick","Regal Cinema","Popcorn was salty", 2);
+
+    }
 }
